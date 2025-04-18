@@ -4,13 +4,6 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 
 
 class SearchTool(BaseTool):
-    """
-    A simple tool that performs an internet search and returns results.
-    """
-
-    # def __init__(self):
-    #     super().__init__()  # Call the BaseTool constructor
-
     name = "SearchTool"
     description = "Searches the internet using a query and returns the top result."
     requires_env_vars = [
